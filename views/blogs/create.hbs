@@ -1,0 +1,42 @@
+<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+<div class="container mt-5 p-3 px-5 border shadow rounded">
+    <div class="heading text-center">
+        <h2 class="fw-bold">Share your story</h2>
+    </div>
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" name="title" id="title" placeholder="Post Title" />
+    </div>
+
+    {{!-- <div class="mb-3">
+        <label for="thumbnail" class="form-label">Thumbnail</label>
+        <input type="file" class="form-control" name="thumbnail" id="thumbnail" placeholder="Post Thumbnail" />
+    </div> --}}
+
+    <div class="mb-3">
+        <label for="excerpt" class="form-label">Excerpt</label>
+        <textarea class="form-control" name="excerpt" id="excerpt" placeholder="What your post is about?"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="body" class="form-label">Body</label>
+        <div id="editor">
+
+        </div>
+    </div>
+    <div class="mb-3">
+        <input type="checkbox" name="prem" id="prem">
+        <label for="prem" class="form-label">Mark premium</label>
+    </div>
+    <div id="form-help">ffsdfsdfsd</div>
+    <div class="submitBtn text-end">
+        <button class="btn btn-primary" id="upload-blog">
+            Upload Post
+        </button>
+    </div>
+</div>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script>
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+</script>

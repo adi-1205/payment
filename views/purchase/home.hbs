@@ -1,0 +1,35 @@
+<div class="container mt-4">
+    {{#unless isCreator}}
+    <div class="shadow rounded p-3 mb-3">
+        <h2>Get our creator plan to post blog</h2>
+        <p>What will you get?</p>
+        <ul>
+            <li>Lifetime creator access</li>
+            <li>Post unlimited blogs</li>
+            <li>At minimum cost of 500 Rs.</li>
+        </ul>
+        <button class="btn btn-warning" id="buy-creator-btn">Buy Now</button>
+    </div>
+    {{/unless}}
+    {{#if isSub}}
+    <div class="shadow rounded p-3">
+        <h4>Subcribed to</h4>
+        <h1>Gold Plan</h1>
+        <p>Started on: {{start}}</p>
+        <p>Ends on: {{end}}</p>
+        <a class="btn btn-outline-warning" href="/purchase/cancel">Cancel</a>
+    </div>
+    {{else}}
+    <div class="shadow rounded p-3">
+        <h2>Subscribe to our Gold plan to read Premium blogs</h2>
+        <p>What will you get?</p>
+        <ul>
+            <li>Premium blogs access</li>
+            <li>Unlimited premium blogs for 1 month</li>
+            <li>At minimum cost of 100 Rs./Month</li>
+        </ul>
+        <button class="btn btn-warning" id="subscribe-btn">Subscribe Now</button>
+    </div>
+    {{/if}}
+
+</div>

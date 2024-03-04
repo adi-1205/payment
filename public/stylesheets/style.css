@@ -1,0 +1,70 @@
+.hr {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.235);
+    width: 75%;
+}
+
+.auth-image {
+    position: relative;
+}
+
+.auth-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+#loading {
+    display: none;
+}
+
+.form-text {
+    display: none;
+}
+
+.auth-image>img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#form-help{
+    color: red;
+    display: none;
+}
+
+
+.page-item:not(.disabled) .page-link {
+    color: #24282c !important;
+}
+
+.page-item a:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.page-item.active .page-link {
+    background-color: #24282c !important;
+    color: #dbdbdb !important;
+    border: none;
+}
+
+
+*::-webkit-scrollbar {
+    background: white;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(78, 78, 78);
+    width: 10px;
+}
+
+
+.read-blog-img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
